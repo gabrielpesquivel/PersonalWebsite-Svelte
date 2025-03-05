@@ -36,7 +36,7 @@
 
 <style>
   .container {
-    width: var(--boundary, 400px);
+    width: calc(var(--boundary, 400px)*2);
     height: var(--boundary, 400px);
     position: relative;
     margin: 2rem auto 0;
