@@ -3,7 +3,7 @@
 </script>
 
 <header class="header">
-    <h1> Welcome to Gabe Town </h1>
+    <h1> Gabe's Fruitger Aero World </h1>
     <nav>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
@@ -25,6 +25,8 @@
 
     .header h1 {
         color: white;
+        font-size: 2em;
+		font-weight: 300;
         font-family: "Comic Sans MS", cursive;
     }
     nav a {
