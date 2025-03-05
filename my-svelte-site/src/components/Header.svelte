@@ -3,13 +3,16 @@
 </script>
 
 <header class="header">
-    <h1> Gabe's Fruitger Aero World </h1>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#blog">Blog</a>
-    </nav>
-</header>
+	<h1>Gabe's Fruitger Aero World</h1>
+	<nav>
+	  <!-- Notice the '#' in these links because svelte-spa-router uses hash routing by default -->
+	  <a href="#/">Home</a>
+	  <a href="#/about">About</a>
+	  <a href="#/projects">Projects</a>
+	  <a href="#/blog">Blog</a>
+	</nav>
+  </header>
+  
 
 <style>
     .header {
