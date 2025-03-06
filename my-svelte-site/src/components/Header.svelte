@@ -1,18 +1,17 @@
 <script>
-    import { onMount } from 'svelte';
-    let clickSound;
-  
-    onMount(() => {
-      // Point to your audio file in the /public or /static directory
-      clickSound = new Audio('/sounds/nav_sound.mp3');
-    });
-  
-    function playClickSound() {
-      // Reset to start each time to play from the beginning
-      clickSound.currentTime = 0; 
-      clickSound.play();
-    }
-  </script>
+  import { onMount } from 'svelte';
+  let clickSound;
+
+  onMount(() => {
+    clickSound = new Audio('/sounds/nav_sound.mp3');
+    clickSound.volume = 0.2;
+  });
+
+  function playClickSound() {
+    clickSound.currentTime = 0;
+    clickSound.play();
+  }
+</script>
   
   <header class="header">
     <h1>Gabe's Fruitger Aero World</h1>
