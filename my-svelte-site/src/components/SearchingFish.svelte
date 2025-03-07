@@ -5,7 +5,7 @@
 
   // Customize these props as needed
   export let size = 200;        // size of the fish (in px)
-  export let boundary = 400;    // size of the container (in px)
+  export let boundary = 500;    // size of the container (in px)
   export let duration = 3000;   // how long each swim transition should last
 
   // Initialize tweened positions

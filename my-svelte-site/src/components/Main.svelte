@@ -3,7 +3,6 @@
 </script>
 
 <main>
-	<h1> Hello stranger </h1>
 	<p> Welcome to my frutiger aero world, built in svelte. </p>
 </main>
 

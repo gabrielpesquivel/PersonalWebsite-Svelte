@@ -31,7 +31,7 @@
 	  background-attachment: scroll;
 	}
 	:global(h1) {
-		color: rgb(255, 170, 0);
+		color: rgb(232, 157, 7);
 		font-size: 5em;
 		font-weight: 300;
 		text-align: center;
