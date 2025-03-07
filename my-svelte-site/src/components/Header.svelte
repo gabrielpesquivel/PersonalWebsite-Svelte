@@ -4,7 +4,7 @@
 
   onMount(() => {
     clickSound = new Audio('/sounds/nav_sound.mp3');
-    clickSound.volume = 0.2;
+    clickSound.volume = 0.05;
   });
 
   function playClickSound() {
