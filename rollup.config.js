@@ -29,7 +29,7 @@ export default {
     commonjs(),
     production && terser(),
     copy({
-      targets: [{ src: 'public/*', dest: '.' }] // Copies public assets to "build/"
+      targets: [{ src: 'public/*', dest: 'build/' }] // Copies public assets to "build/"
     })
   ],
   watch: {
