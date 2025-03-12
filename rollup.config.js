@@ -13,7 +13,7 @@ export default {
     sourcemap: true,
     format: 'iife',
     name: 'app',
-    file: 'build/bundle.js' // Outputs directly to "build/" in the root
+    file: './build/bundle.js' // Outputs directly to "build/" in the root
   },
   plugins: [
     svelte({
@@ -29,8 +29,13 @@ export default {
     commonjs(),
     production && terser(),
     copy({
-      targets: [{ src: 'public/*', dest: 'build/' }] // Copies public assets to "build/"
-    })
+      targets: [
+        { src: 'public/**/*', dest: 'build/' }  // Copies everything in public/
+      ],
+      // Avoid copying "public/build/" into "build/"
+      hook: 'buildStart', // Ensures copy happens before Rollup builds
+      verbose: true, // Logs copied files
+    })    
   ],
   watch: {
     clearScreen: false
