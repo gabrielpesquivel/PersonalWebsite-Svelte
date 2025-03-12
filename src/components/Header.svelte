@@ -16,7 +16,6 @@
   <header class="header">
     <h1>Gabe's Fruitger Aero World</h1>
     <nav>
-      <!-- Use on:click to play the sound whenever a link is clicked -->
       <a href="#/" on:click={playClickSound}>Home</a>
       <a href="#/about" on:click={playClickSound}>About</a>
       <a href="#/why" on:click={playClickSound}>Why</a>
