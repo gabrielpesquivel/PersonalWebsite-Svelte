@@ -28,9 +28,9 @@ export default {
     }),
     commonjs(),
     production && terser(),
-    copy({ // Copy public/index.html to build/index.html
-      targets: [{ src: 'public/index.html', dest: 'build/' }]
-    })
+    copy({
+      targets: [{ src: 'public/*', dest: 'build/' }]
+    })    
   ],
   watch: {
     clearScreen: false
