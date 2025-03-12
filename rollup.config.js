@@ -3,7 +3,7 @@ import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
 import terser from '@rollup/plugin-terser';
 import css from 'rollup-plugin-css-only';
-import copy from 'rollup-plugin-copy'; // Import the copy plugin
+import copy from 'rollup-plugin-copy';
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -13,7 +13,7 @@ export default {
     sourcemap: true,
     format: 'iife',
     name: 'app',
-    file: 'build/bundle.js' // Output should match your build folder
+    file: 'build/bundle.js' // Outputs directly to "build/" in the root
   },
   plugins: [
     svelte({
@@ -29,8 +29,8 @@ export default {
     commonjs(),
     production && terser(),
     copy({
-      targets: [{ src: 'public/*', dest: 'build/' }]
-    })    
+      targets: [{ src: 'public/*', dest: '.' }] // Copies public assets to "build/"
+    })
   ],
   watch: {
     clearScreen: false
