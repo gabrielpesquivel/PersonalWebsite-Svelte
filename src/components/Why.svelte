@@ -4,8 +4,8 @@
 
 <Header />
 
-<div class="blog-container">
-    <h1>Blog</h1>
+<div class="why-container">
+    <h1>Why</h1>
     <p>
         What do I like about the Frutiger Aero aesthetic. Well, that's a bit of a difficult question to answer. To me it represents this nostalgic time in my life,
          between the ages of around 4 to 13 years old. When I look back, I think about these clean UI's I experienced on my consoles or my parents computers, and even
@@ -16,7 +16,7 @@
 </div>
 
 <style>
-    .blog-container {
+    .why-container {
         background: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
         padding: 20px;
         border-radius: 10px; /* Rounded corners */

@@ -19,8 +19,8 @@
       <!-- Use on:click to play the sound whenever a link is clicked -->
       <a href="#/" on:click={playClickSound}>Home</a>
       <a href="#/about" on:click={playClickSound}>About</a>
-      <a href="#/projects" on:click={playClickSound}>Projects</a>
-      <a href="#/blog" on:click={playClickSound}>Blog</a>
+      <a href="#/why" on:click={playClickSound}>Why</a>
+      <a href="#/projects" on:click={playClickSound}>Upcoming Projects</a>
     </nav>
   </header>
   
