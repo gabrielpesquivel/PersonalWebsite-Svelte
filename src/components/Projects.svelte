@@ -7,7 +7,10 @@
 <div class="projects-container">
     <h1>Upcoming Projects</h1>
     <p>
-
+        1. Sentiment analysis of different social networks for stock trading <br>
+        2. Analysing faces and gathering data on individual (without making it weird) <br>
+        3. Game using godot or unity <br>
+        4. Analysing local business opportunities
     </p>
 </div>
 
